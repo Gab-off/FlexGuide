@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>FlexGuide</title>
+</head>
+
+<body>
+  <!-- HEADER FLEXGUIDE -->
+  <div class="bg-header">
+    <div class="container flex-header">
+      <div class="flex-logo">FLEXGUIDE</div>
+      <ul>
+        <li>lorem</li>
+        <li>lorem</li>
+        <li>lorem</li>
+        <li>lorem</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BODY FLEXGUIDE -->
+  <div class="container">
+    <h1 class="flex-title">Flex - Display Flex</h1>
+    <p class="paragraph-title">Utilizar o <strong>display: flex</strong> define o elemento como flex container e transforma o seus filhos em flex-itens.</p>
+    <p><strong>EXEMPLO:</strong></p>
+    <section class="exemplo-display">
+      <!-- exemplo sem flex ativado -->
+      <div class="container-flex">
+        <p id="p-block">DISPLAY: BLOCK - (SEM O FLEX)</p>
+        <section class="sem-flex">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </section>
+      </div>
+
+      <!-- exemplo com flex ativado -->
+      <div class="container-flex"> <!-- Div para segurar P dentro da div sem entrar no flex -->
+        <p>DISPLAY: FLEX</p>
+        <section class="com-flex">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </section>
+        <p>Quando a quantidade de itens passa do limite de <strong>width</strong> o item estoura a margem. </p>
+        <section class="com-flex">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>texto</div>
+
+        </section>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

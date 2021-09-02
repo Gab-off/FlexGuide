@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/**
+ * Remove anchor text-decoration
+ */ 
+
+ a {
+	text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */ 
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+body {
+  font-family: 'Nova Mono', monospace;
+}
+
+/* medida do container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* HEADER */
+.bg-header {
+  background: #91F261;
+  height: 70px;
+}
+
+.flex-header {
+  display: flex;
+}
+
+.flex-logo {
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 45px;
+  font-weight:bold;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+}
+
+/* Style DISPLAY: FLEX */
+.flex-title {
+  font-size:40px;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.paragraph-title {
+  line-height:25px;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.exemplo-display {
+  display: flex;
+}
+
+.sem-flex {
+  margin-right: 50px;
+}
+
+.sem-flex div {
+  border: 1px solid rgb(1, 75, 1);
+  margin: 2px 0;
+  max-width:200px;
+}
+
+#p-block {
+  margin-right: 30px;
+}
+
+
+
+.com-flex {
+  display: flex;
+  border: 1px solid rgb(1, 75, 1);
+  max-width: 200px;
+}
+
+.com-flex div {
+  background: #73BF4C;
+  margin: 5px;
+}
