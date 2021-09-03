@@ -43,7 +43,8 @@
       </div>
 
       <!-- exemplo com flex ativado -->
-      <div class="container-flex"> <!-- Div para segurar P dentro da div sem entrar no flex -->
+      <div class="container-flex">
+        <!-- Div para segurar P dentro da div sem entrar no flex -->
         <p>DISPLAY: FLEX</p>
         <section class="com-flex">
           <div>1</div>
@@ -63,8 +64,74 @@
           <div>8</div>
           <div>9</div>
           <div>texto</div>
-
         </section>
+      </div>
+    </section>
+
+    <!-- FLEX DIRECTION -->
+    <h1 class="flex-title">Flex - Direction</h1>
+    <p class="paragraph-title">Utilizar o <strong>flex-direction: </strong> define a direção com que os elementos irão seguir.</p>
+    <p><strong>EXEMPLO:</strong></p>
+    <section class="container-direction">
+      <p class="p-row">FLEX-DIRECTION: ROW <span>(modo padrão quando se dá um display: flex)</span></p>
+      <div class="direction-row">
+        <img class="row_image" src="img/jardim1.jpg" alt="">
+        <img class="row_image" src="img/jardim2.jpeg" alt="">
+        <img class="row_image" src="img/jardim3.jpg" alt="">
+      </div>
+      <p class="p-row">FLEX-DIRECTION: ROW-REVERSE</p>
+      <div class="row_reverse">
+        <img class="row_image" src="img/jardim1.jpg" alt="">
+        <img class="row_image" src="img/jardim2.jpeg" alt="">
+        <img class="row_image" src="img/jardim3.jpg" alt="">
+      </div>
+
+      <section class="container-column">
+        <div>
+          <p>FLEX-DIRECTION: COLUMN</p>
+          <div class="direction-column">
+            <img class="row_image" src="img/jardim1.jpg" alt="">
+            <img class="row_image" src="img/jardim2.jpeg" alt="">
+            <img class="row_image" src="img/jardim3.jpg" alt="">
+          </div>
+        </div>
+
+        <div>
+          <p>FLEX-DIRECTION: COLUMN REVERSE</p>
+          <div class="column_reverse">
+            <img class="row_image" src="img/jardim1.jpg" alt="">
+            <img class="row_image" src="img/jardim2.jpeg" alt="">
+            <img class="row_image" src="img/jardim3.jpg" alt="">
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FLEX-WRAP -->
+    <h1 class="flex-title">FLEX - WRAP</h1>
+    <p class="paragraph-title">Utilizar o <strong>flex-wrap: </strong> restringe os itens do <span>FLEX</span> a não quebrarem o container e se moverem para baixo. Na primeira sessão falando sobre o <i>display: flex</i> damos o exemplo que os itens após passar do tamanho do container, os ignora e continua sendo adicionado um na frente do outro. Aqui ocorre algo diferente. </p>
+    <p><strong>EXEMPLO:</strong></p>
+    <section class="container-wrap">
+      <div>
+        <p>FLEX-WRAP: WRAP</p>
+        <div class="wrap-content">
+          <div>textoTeste</div>
+          <div>textoTeste</div>
+          <div>textoTeste</div>
+          <div>textoTeste</div>
+          <div>textoTeste</div>
+        </div>
+      </div>
+
+      <div>
+        <p>FLEX-WRAP: WRAP-REVERSE</p>
+        <div class="wrap-reverse">
+          <div>textoTeste</div>
+          <div>textoTeste</div>
+          <div>textoTeste</div>
+          <div>textoTeste</div>
+          <div>textoTeste</div>
+        </div>
       </div>
     </section>
   </div>
