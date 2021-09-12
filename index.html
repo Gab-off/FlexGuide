@@ -30,7 +30,7 @@
     <h1 class="flex-title">Flex - Display Flex</h1>
     <p class="paragraph-title">Utilizar o <strong>display: flex</strong> define o elemento como flex container e transforma o seus filhos em flex-itens.</p>
     <p><strong>EXEMPLO:</strong></p>
-    <section class="exemplo-display">
+    <section class="sub-container exemplo-display">
       <!-- exemplo sem flex ativado -->
       <div class="container-flex">
         <p id="p-block">DISPLAY: BLOCK - (SEM O FLEX)</p>
@@ -72,8 +72,8 @@
     <h1 class="flex-title">Flex - Direction</h1>
     <p class="paragraph-title">Utilizar o <strong>flex-direction: </strong> define a direção com que os elementos irão seguir.</p>
     <p><strong>EXEMPLO:</strong></p>
-    <section class="container-direction">
-      <p class="p-row">FLEX-DIRECTION: ROW <span>(modo padrão quando se dá um display: flex)</span></p>
+    <section class="sub-container">
+      <p class="p-row">FLEX-DIRECTION: ROW <span class="mini-span">(modo padrão quando coloca apenas display: flex)</span></p>
       <div class="direction-row">
         <img class="row_image" src="img/jardim1.jpg" alt="">
         <img class="row_image" src="img/jardim2.jpeg" alt="">
@@ -95,7 +95,6 @@
             <img class="row_image" src="img/jardim3.jpg" alt="">
           </div>
         </div>
-
         <div>
           <p>FLEX-DIRECTION: COLUMN REVERSE</p>
           <div class="column_reverse">
@@ -109,9 +108,9 @@
 
     <!-- FLEX-WRAP -->
     <h1 class="flex-title">FLEX - WRAP</h1>
-    <p class="paragraph-title">Utilizar o <strong>flex-wrap: </strong> restringe os itens do <span>FLEX</span> a não quebrarem o container e se moverem para baixo. Na primeira sessão falando sobre o <i>display: flex</i> damos o exemplo que os itens após passar do tamanho do container, os ignora e continua sendo adicionado um na frente do outro. Aqui ocorre algo diferente. </p>
+    <p class="paragraph-title">Utilizar o <strong>flex-wrap: </strong> restringe os itens do <span class="green-color">FLEX</span> a não quebrarem o container e se moverem para baixo. Na primeira sessão falando sobre o <i>display: flex</i> damos o exemplo que os itens após passar do tamanho do container, os ignora e continua sendo adicionado um na frente do outro. Aqui ocorre algo diferente. </p>
     <p><strong>EXEMPLO:</strong></p>
-    <section class="container-wrap">
+    <section class="sub-container container-wrap">
       <div>
         <p>FLEX-WRAP: WRAP</p>
         <div class="wrap-content">
@@ -122,7 +121,6 @@
           <div>textoTeste</div>
         </div>
       </div>
-
       <div>
         <p>FLEX-WRAP: WRAP-REVERSE</p>
         <div class="wrap-reverse">
@@ -134,6 +132,131 @@
         </div>
       </div>
     </section>
+
+    <h2 class="flex-subtitle">Flex - flow</h2>
+    <p class="paragraph-title">Atalho para unir as duas opções acima em uma mesma linha.</p>
+    <p><strong>EXEMPLO:</strong></p>
+    <section class="sub-container flow-container">
+      <p>FLEX - FLOW: ROW NOWRAP <span class="mini-span">(diminui o tamanho do container para mostrar que o há o estouro da delimitação)</span></p>
+      <div class="flow-content">
+        <img class="row_image" src="img/jardim1.jpg" alt="">
+        <img class="row_image" src="img/jardim2.jpeg" alt="">
+        <img class="row_image" src="img/jardim3.jpg" alt="">
+      </div>
+      <br />
+      <p>FLEX - FLOW: ROW WRAP <span class="mini-span">(o mesmo container acima, porém utilizando o <span class="green-color">flex-flow: now wrap</span>)</p>
+      <div class="flow_row_wrap">
+        <img class="row_image" src="img/jardim1.jpg" alt="">
+        <img class="row_image" src="img/jardim2.jpeg" alt="">
+        <img class="row_image" src="img/jardim3.jpg" alt="">
+      </div>
+      <br />
+      <p class="border-border">É ainda possível utilizar <span class="green-color">flex-flow: column wrap</span> e <span class="green-color">flex-flow: column nowrap</span></p>
+    </section>
+
+    <!-- JUSTIFY - CONTENT -->
+    <h1 class="flex-title">JUSTIFY - CONTENT</h1>
+    <p class="paragraph-title">Alinhar itens que estão com o <span class="green-color">display-flex</span> ativo de
+      várias formas.</p>
+    <p><strong>EXEMPLO:</strong></p>
+    <section class="sub-container justify-container">
+      <div>
+        <p>JUSTIFY-CONTENT: FLEX-START</p>
+        <div class="justify-content">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+      <div>
+        <p>JUSTIFY-CONTENT: FLEX-END</p>
+        <div class="justify-content flex-end">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+      <div>
+        <p>JUSTIFY-CONTENT: CENTER</p>
+        <div class="justify-content justify-center">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+      <div>
+        <p>JUSTIFY-CONTENT: SPACE-BETWEEN</p>
+        <div class="justify-content space-between">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+      <div>
+        <p>JUSTIFY-CONTENT: SPACE-AROUND</p>
+        <div class="justify-content space-around">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+    </section>
+
+    <p class="paragraph-title p-justify_margin">Podemos utilizar o justify-content no columns também.</p>
+    <p><strong>EXEMPLO:</strong></p>
+    <section class="sub-container justify-container">
+      <div>
+        <p>JUSTIFY-CONTENT: FLEX-START // COLUMN</p>
+        <div class="justify-content justify-column">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+      <div>
+        <p>JUSTIFY-CONTENT: FLEX-END // COLUMN</p>
+        <div class="justify-content justify-column flex-end">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+      <div>
+        <p>JUSTIFY-CONTENT: FLEX-START // COLUMN</p>
+        <div class="justify-content justify-column justify-center">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+      <div>
+        <p>JUSTIFY-CONTENT: FLEX-START // COLUMN</p>
+        <div class="justify-content justify-column space-between">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+      <div>
+        <p>JUSTIFY-CONTENT: FLEX-START // COLUMN</p>
+        <div class="justify-content justify-column space-around">
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+          <div>lorem</div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </body>
 
