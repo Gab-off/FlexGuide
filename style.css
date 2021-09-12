@@ -1,7 +1,12 @@
 a {
   text-decoration: none;
+  color: #000;
 }
-
+a:visited {
+  color: var(--black-green);
+  background-color: transparent;
+  text-decoration: none;
+}
 ol,
 ul {
   list-style: none;
@@ -61,6 +66,7 @@ ul {
 :root {
   --soft_green: #73bf4c;
   --light-green: #91f261;
+  --black-green: #064104;
 }
 
 body {
@@ -89,18 +95,29 @@ body {
   margin: 0 auto;
 }
 
+.container-body {
+  margin-top: 75px;
+}
+
 .green-color {
   color: var(--soft_green);
 }
 
 /* HEADER */
 .bg-header {
+  overflow: hidden;
   background: var(--light-green);
-  height: 70px;
+  height: 80px;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .flex-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .flex-logo {
@@ -120,6 +137,7 @@ li {
 /* Style DISPLAY: FLEX */
 .flex-title {
   font-size: 40px;
+  text-transform: uppercase;
   font-weight: bold;
   border-bottom: 3px solid #000;
   border-radius: 5px;
@@ -128,6 +146,7 @@ li {
 
 .flex-subtitle {
   font-size: 25px;
+  text-transform: uppercase;
   font-weight: bold;
   margin-top: 15px;
   border-top: 2px dotted #000;
@@ -329,12 +348,156 @@ li {
 .p-justify_margin {
   border-top: 2px dotted #000;
   margin-top: 15px;
-  padding-top: 10px;;
+  padding-top: 10px;
 }
 
 .justify-column {
   flex-direction: column;
   text-align: center;
   min-height: 180px;
+}
 
+@media only screen and (max-width: 787px) {
+  /* HEADER */
+  .bg-header {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .flex-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-logo {
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin: 0 3px;
+    font-size: 10px;
+    padding: 1px;
+    border: 1px solid var(--soft_green);
+    border-radius: 25%;
+  }
+
+  .container {
+    width: 330px;
+    padding: 0px;
+  }
+
+  .sub-container {
+    max-width: 310px;
+  }
+
+  /* DISPLAY: FLEX */
+  .flex-title {
+    font-size: 27px;
+  }
+
+  .exemplo-display {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .paragraph-title {
+    font-size: 12px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 5px 0;
+  }
+
+  .sem-flex {
+    margin: 3px 0px;
+  }
+
+  .sem-flex div {
+    background: var(--soft_green);
+    max-width: 100%;
+  }
+
+  #p-block {
+    margin-right: 0;
+  }
+
+  .container-flex {
+    max-width: 100%;
+  }
+
+  .com-flex {
+    display: flex;
+    border: 1px solid rgb(1, 75, 1);
+    max-width: 100%;
+  }
+
+  /* FLEX-DIRECTION */
+  .row_image {
+    width: 90px;
+    margin: 10px 5px;
+  }
+
+  .container-column {
+    display: block;
+    padding: 0;
+  }
+
+  .container-column p {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .direction-column {
+    border: 0;
+    align-items: center;
+  }
+
+  .column_reverse {
+    border: 0;
+    align-items: center;
+  }
+
+  /* FLEX-WRAP */
+  .container-wrap {
+    display: block;
+  }
+
+  .wrap-content {
+    max-width: 100%;
+  }
+
+  .wrap-reverse {
+    max-width: 100%;
+  }
+
+  /* FLEX - FLOW */
+  .flow-content {
+    width: 70%;
+  }
+
+  .flow_row_wrap {
+    width: 70%;
+  }
+
+  .flex-subtitle {
+    font-size: 20px;
+  }
+
+  /* JUSTIFY - CONTENT */
+  .justify-content {
+    min-width: 300px;
+  }
+
+  .justify-column {
+    min-height: 180px;
+  }
 }

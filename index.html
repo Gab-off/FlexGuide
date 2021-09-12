@@ -13,21 +13,22 @@
 
 <body>
   <!-- HEADER FLEXGUIDE -->
-  <div class="bg-header">
+  <navbar class="bg-header">
     <div class="container flex-header">
       <div class="flex-logo">FLEXGUIDE</div>
       <ul>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
+        <li><a href="#displayFlex">Display Flex</a></li>
+        <li><a href="#flexDirection">Flex-direction</a></li>
+        <li><a href="#flexWrap">Flex-Wrap</li>
+        <li><a href="#justifyContent">Justify-content</a></li>
       </ul>
     </div>
-  </div>
+  </navbar>
 
   <!-- BODY FLEXGUIDE -->
-  <div class="container">
-    <h1 class="flex-title">Flex - Display Flex</h1>
+  div
+  <div class="container container-body">
+    <h1 id="displayFlex" class="flex-title">Display Flex</h1>
     <p class="paragraph-title">Utilizar o <strong>display: flex</strong> define o elemento como flex container e transforma o seus filhos em flex-itens.</p>
     <p><strong>EXEMPLO:</strong></p>
     <section class="sub-container exemplo-display">
@@ -69,7 +70,7 @@
     </section>
 
     <!-- FLEX DIRECTION -->
-    <h1 class="flex-title">Flex - Direction</h1>
+    <h1 id="flexDirection" class="flex-title">Flex - Direction</h1>
     <p class="paragraph-title">Utilizar o <strong>flex-direction: </strong> define a direção com que os elementos irão seguir.</p>
     <p><strong>EXEMPLO:</strong></p>
     <section class="sub-container">
@@ -107,7 +108,7 @@
     </section>
 
     <!-- FLEX-WRAP -->
-    <h1 class="flex-title">FLEX - WRAP</h1>
+    <h1 id="flexWrap" class="flex-title">FLEX - WRAP</h1>
     <p class="paragraph-title">Utilizar o <strong>flex-wrap: </strong> restringe os itens do <span class="green-color">FLEX</span> a não quebrarem o container e se moverem para baixo. Na primeira sessão falando sobre o <i>display: flex</i> damos o exemplo que os itens após passar do tamanho do container, os ignora e continua sendo adicionado um na frente do outro. Aqui ocorre algo diferente. </p>
     <p><strong>EXEMPLO:</strong></p>
     <section class="sub-container container-wrap">
@@ -137,7 +138,7 @@
     <p class="paragraph-title">Atalho para unir as duas opções acima em uma mesma linha.</p>
     <p><strong>EXEMPLO:</strong></p>
     <section class="sub-container flow-container">
-      <p>FLEX - FLOW: ROW NOWRAP <span class="mini-span">(diminui o tamanho do container para mostrar que o há o estouro da delimitação)</span></p>
+      <p>FLEX - FLOW: ROW NOWRAP <span class="mini-span">(diminui o tamanho do container para mostrar que há o estouro da delimitação)</span></p>
       <div class="flow-content">
         <img class="row_image" src="img/jardim1.jpg" alt="">
         <img class="row_image" src="img/jardim2.jpeg" alt="">
@@ -155,7 +156,7 @@
     </section>
 
     <!-- JUSTIFY - CONTENT -->
-    <h1 class="flex-title">JUSTIFY - CONTENT</h1>
+    <h1 id="justifyContent" class="flex-title">JUSTIFY - CONTENT</h1>
     <p class="paragraph-title">Alinhar itens que estão com o <span class="green-color">display-flex</span> ativo de
       várias formas.</p>
     <p><strong>EXEMPLO:</strong></p>
